@@ -1,0 +1,163 @@
+<html><head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/post_to_sheet.js"></script>
+
+
+<!-- sweetAlert -->
+<script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/font-awesome.min.css" rel="stylesheet">
+
+
+
+<title>Robot design study</title>
+</head>
+<body>
+	<nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top">
+         <a class="navbar-brand" href="index.html"><h3>Robot design study</h3></a>
+			<div class="collapse navbar-collapse" id="navbarsExampleDefault">
+       			 <ul class="navbar-nav mr-auto">
+        		</ul>
+        </div>
+    </nav>
+
+
+
+<div class="container">
+    		
+	
+    	<div class="row" style="padding-top: 100px; padding-bottom: 100px;" id="composition8">
+    			<div class="col-md-6">
+    				<center>
+    					<img id="part_head" src = "images/robot_graphics/robot_graphics.000.jpeg" style="width : 100%"></img>
+    				</center>
+    			
+    			</div>
+    		
+    			<div class="col-md-6" >
+    		
+						<form id="post_data">
+								<div id="hidden_info">
+									<p><input id = "order" name="order" type="text" value=""></p>
+								</div>
+								<div id="question_1">
+									<h3>Please look at the sketch of the robot on the left hand side and answer the following questions</h3>
+									<hr style="border: 0.5;">
+									<h4>if you are the designer of this robot, how much of the intelligence would you like this robot to have.</h4>
+									<p>please answer in scale of 0(no-intelligence) - 10(super intelligence)</p>
+									<p><label for="name">Intelligence level:</label><input name="cpu_1" type="text" value=""></p>
+									<h4>if you are the designer of this robot, what is the size of the most powerful motor do you want to put into this robot.</h4>
+									<p>please answer in scale of 1 Watt - 1,000 Watt</p>
+    								<p><label for="name">Motor size:</label><input name="motor_1" type="text" value=""></p>
+    								<h4>if you are the designer of this robot, what is the role of this robot.</h4>
+    								 <select name="role_1">
+   								 		<option value="No answer">Please select</option>
+   								 		<option value="Teacher">Teacher</option>
+    									<option value="Manager">Manager</option>
+    									<option value="Waitress">Waitress/Waiter</option>
+    									<option value="Truck driver">Truck driver</option>
+    									<option value="Engineer">Engineer</option>
+    									<option value="Doctor">Doctor</option>
+    									<option value="Salesman/Saleswomen">Salesman/Saleswomen</option>
+    									<option value="Actor/Actress">Actor/Actress</option>
+  									</select>
+    								
+    								
+    							</div>
+    							
+    							<div id="question_2">
+    								<h3>Please look at the sketch of the robot on the left hand side and answer the following questions</h3>
+    								<hr style="border: 0.5;">
+									<h4>if you are the designer of this robot, how much of the intelligence would you like this robot to have.</h4>
+									<p>please answer in scale of 0(no-intelligence) - 10(super intelligence)</p>
+									<p><label for="name">Intelligence level:</label><input name="cpu_2" type="text" value=""></p>
+									<h4>if you are the designer of this robot, what is the size of the most powerful motor do you want to put into this robot.</h4>
+									<p>please answer in scale of 1 Watt - 1,000 Watt</p>
+    								<p><label for="name">Motor size:</label><input name="motor_2" type="text" value=""></p>
+    								<h4>if you are the designer of this robot, what is the role of this robot.</h4>
+    								 <select name="role_2">
+    								 	<option value="No answer">Please select</option>
+   								 		<option value="Teacher">Teacher</option>
+    									<option value="Manager">Manager</option>
+    									<option value="Waitress">Waitress/Waiter</option>
+    									<option value="Truck driver">Truck driver</option>
+    									<option value="Engineer">Engineer</option>
+    									<option value="Doctor">Doctor</option>
+    									<option value="Salesman/Saleswomen">Salesman/Saleswomen</option>
+    									<option value="Actor/Actress">Actor/Actress</option>
+  									</select>
+    								
+    							</div>
+    							
+    							<div id="question_3">
+    								<h3>Please look at the sketch of the robot on the left hand side and answer the following questions</h3>
+    								<hr style="border: 0.5;">
+									<h4>if you are the designer of this robot, how much of the intelligence would you like this robot to have.</h4>
+									<p>please answer in scale of 0(no-intelligence) - 10(super intelligence)</p>
+									<p><label for="name">Intelligence level:</label><input name="cpu_3" type="text" value=""></p>
+									<h4>if you are the designer of this robot, what is the size of the most powerful motor do you want to put into this robot.</h4>
+									<p>please answer in scale of 1 Watt - 1,000 Watt</p>
+    								<p><label for="name">Motor size:</label><input name="motor_3" type="text" value=""></p>
+    								<h4>if you are the designer of this robot, what is the role of this robot.</h4>
+    								 <select name="role_3">
+    								 	<option value="No answer">Please select</option>
+   								 		<option value="Teacher">Teacher</option>
+    									<option value="Manager">Manager</option>
+    									<option value="Waitress">Waitress/Waiter</option>
+    									<option value="Truck driver">Truck driver</option>
+    									<option value="Engineer">Engineer</option>
+    									<option value="Doctor">Doctor</option>
+    									<option value="Salesman/Saleswomen">Salesman/Saleswomen</option>
+    									<option value="Actor/Actress">Actor/Actress</option>
+  									</select>
+    								
+    							</div>
+    							
+    							
+    							<div id="final_question">
+    								
+    									<h4>Do you think the robots you have seen have gender? (Yes/No)</h4>
+										<select name="final_question_1">
+    								 		<option value="No answer">Please select</option>
+    										<option value="Yes">Yes</option>
+    										<option value="No">No</option>
+  										</select>
+  										
+										<h4>Do you agree or disagree that robot should have sexual identity?</h4>
+										<p><input name="final_question_2" type="text" value=""></p>
+										
+										
+										<h4>Do you agree that there is a different between genders? (Yes/No)</h4>
+										<p><input name="final_question_3" type="text" value=""></p>
+										
+										<h4>What is your sexual identity?</h4>
+										<p><input name="final_question_4" type="text" value=""></p>
+										
+    									
+    									<input type="submit" value="Send">
+    							</div>
+    							
+    							<p id="result"></p>
+    							
+    							
+    						
+
+						</form>
+						<button id="nextquestion">next question</button>
+        		</div>
+    		
+    		</div>
+    	<hr style="border: 0.5;">
+    	 	
+</div>
+	
+
+
+
+
+</body></html>
+<script src="js/start.js"></script>
